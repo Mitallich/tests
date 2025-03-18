@@ -16,7 +16,7 @@ const driver = new Builder()
   .build()
 
 
-const SITE_URL = "https://localhost:.../"
+const SITE_URL = "https://.../"
 
 let events = [];
 
@@ -33,9 +33,9 @@ let events = [];
     await auth()
     // Переход в раздел ...
     await goToNomenclature()
-    // Создание нового каталога
+    // Создание нового ...
     await createNewDirectory()
-    // Создание нового юнита
+    // Создание нового ...
     await createNewUnit()
     // Проверка информации в блоке "..."
     await checkDetailInfo()
@@ -73,11 +73,11 @@ async function confirmSecurityException() {
 }
 
 async function auth() {
-  logEvent("Страница авторизации", "Авторизация пользователя");
+  logEvent("Страница авторизации", "Авторизация ...");
   await driver.findElement(By.id("login")).sendKeys('...');
   await driver.findElement(By.id("password")).sendKeys('...');
   await driver.findElement(By.css("button.ant-btn.css-8ztnga.ant-btn-primary.ant-btn-lg")).click();
-  // Проверяем отображение имени пользователя ("Admin") в верхнем меню справа
+  // Проверяем отображение имени пользователя ("...") в верхнем меню справа
   const userName = await driver
     .findElement(By.className("name___CND2i"))
     .getText();
