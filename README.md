@@ -1,1 +1,1 @@
-# UI and API tests
+# UI tests
